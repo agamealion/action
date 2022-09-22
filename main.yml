@@ -19,3 +19,26 @@ jobs:
             print("Directory contents:")
             for f in os.listdir():
                 print(f)
+                /*
+                name: Run Script
+
+on:
+    schedule:
+    - cron: "*/5  * * * *"
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: jannekem/run-python-script-action@v1
+        with:
+          script: |
+            import os
+            print(9*9*9)
+            */
+            
+
+                
